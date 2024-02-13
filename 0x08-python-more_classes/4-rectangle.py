@@ -81,4 +81,3 @@ class Rectangle:
         rep = "{}({}, {})".format(self.__class__.__name__,
                 self.width, self.height)
         return rep
-
