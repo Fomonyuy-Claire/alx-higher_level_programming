@@ -1,19 +1,25 @@
 #!/usr/bin/python3
-"""Defining a rectangle"""
+"""Define a rectangle"""
+
 
 class Rectangle:
+    """Represents rectangle"""
 
-    def _init_(self,width=0,height=0):
-
+    def __init__(self, width=0, height=0):
+        """Initialize a new Rectangle.
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
         self.height = height
         self.width = width
 
-        @property
-        def height(self):
-            """get height of rectangle"""
-            return self._height
+    @property
+    def height(self):
+        """Get/set the height of the rectangle."""
+        return self.__height
 
-        @height.setter
+    @height.setter
     def height(self, value):
         """
             Checking for TypeError and ValueError
