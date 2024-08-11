@@ -1,1 +1,1 @@
-Everything Py
+Everything Python
